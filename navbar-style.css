@@ -1,0 +1,84 @@
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+}
+
+/* Left-aligned conference name */
+.left {
+    flex: 1; /* Expands to fill available space */
+}
+
+.conference-name {
+    font-size: 1.5em;
+    color: orangered;
+}
+
+/* ... (other styles) */
+
+/* Right-aligned navigation links and Registration button */
+.right {
+    flex: 1; /* Expands to fill available space */
+    text-align: right;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Registration button styles */
+.registration-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #65c1f658;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* ... (other styles) */
+
+/* Right-aligned navigation links for small screens */
+@media (max-width: 768px) {
+    .right-content {
+        display: none; /* Hide the right-side content */
+    }
+
+    /* Create an icon to toggle the navigation links */
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-toggle:before {
+        content: "\2630"; /* Unicode for the "hamburger" icon */
+        font-size: 24px;
+        color: #ffffff;
+    }
+
+    /* Show the list of links when the icon is clicked */
+    .nav-links.active {
+        display: block;
+    }
+}
