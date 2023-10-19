@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Conference</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ICAFM 2024 - Home</title>
+    <!-- Add your CSS links and styles here -->
+    <style>
+        /* Add CSS for the background container here */
+        .background-container {
+            background: url('background.html') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
 </head>
-<body>    
-    <div class="navbar" id="navbar">
-        <!-- Navigation bar will be inserted here -->
-    </div>
-    
-    <div class="content">
-        <h1>International Conference on Adavanced Functional Materials</h1> 
-        <h1>2024</h1>
-        <p>
-        </p>
-        <p>
-            <strong>Febraury, 2024</strong>
-        </p>
-        <p>
-            <strong>Veer Bahadur Singh Purvanchal University, Jaunpur</strong>
-            <p> In association with: <strong> Society</strong></p>
-        </p>
-        <p>
-            <strong>Venue:</strong> Veer Bahadur Singh Purvanchal University, Jaunpur, India
-        </p>
-    </div>
-    
-    <footer>
-        <p>&copy; 2023 International Conference. All rights reserved.</p>
-    </footer>
+<body>
+    <!-- Top Cover with Conference Name and Logos -->
+    <header>
+        <div class="cover">
+            <img src="logo-left.png" alt="Logo Left" class="logo-left">
+            <h1>ICAFM 2024</h1>
+            <img src="logo-right.png" alt="Logo Right" class="logo-right">
+        </div>
+    </header>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Background Container with Conference Details -->
+    <div class="background-container">
+        <div class="container">
+            <h2>International Conference on Advancements in Functional Materials (ICAFM) 2024</h2>
+            <p>Dates: [Insert Dates]</p>
+            <p>Organized by: Veer Bahadur Singh Purvanchal University, Jaunpur</p>
+            <p>In Association with: [Insert Society Name]</p>
+        </div>
+    </div>
     <script>
-        $(function() {
-            $("#navbar").load("navbar.html");
-        });
+        // Fetch and insert the navigation bar
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
     </script>
+
+    <!-- Add your JavaScript scripts here -->
+
 </body>
 </html>

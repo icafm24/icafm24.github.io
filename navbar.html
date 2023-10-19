@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="navbar-style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="left">
-            <a class="conference-name" href="index.html" style="text-decoration: none;">ICAFM 2024</a>
-        </div>
-        <div class="right">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Add the home page link (your name) on the far left -->
+                <div class="left">
+                    <a class="conference-name"> ICAFM 2024</a>
+                </div>
+                
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="right">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="programme.html">Programme</a></li>
                     <li><a href="important.html">Important Information</a></li>
-                    <li><a href="registration.html" class="registration-button">Registration</a></li>
                 </ul>
+                <a href="registration.html" class="registration-button">Registration</a>
+            </div>
         </div>
     </nav>
+
+    <!-- Add the rest of your content here -->
 </body>
 </html>
