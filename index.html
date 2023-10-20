@@ -28,9 +28,35 @@
             font-size: 36px;
         }
 
-        .organizer {
+        .organizer1 {
             font-size: 18px;
+            color: rgb(150, 20, 0)
         }
+        .organizer2 {
+            font-size: 18px;
+            color: black;
+        }
+        .organizer3 {
+            font-size: 16px;
+            color:rgb(150, 20, 0)
+        }
+        /* Add CSS for the logos and their positioning */
+        .logo {
+            max-width: 50px; /* Adjust the size as needed */
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .left-logo {
+            float: left;
+            margin-right: 10px; /* Adjust the margin as needed to control the spacing */
+        }
+
+        .right-logo {
+            float: right;
+            margin-left: 10px; /* Adjust the margin as needed to control the spacing */
+        }
+
 
         /* Style your navigation bar */
         /* Add your other CSS styles here */
@@ -41,12 +67,20 @@
     <div id="navbar-placeholder"></div>
     <iframe src="background.html" frameborder="0" scrolling="no" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     <div class="header">
-        <h1 class="conference-name">International Conference on Advancements in Functional Materials</h1>
+        <img src="/assets/vbspu-logo.png" class="logo left-logo" alt="VBSPU">
+        <h1 class="conference-name">
+            International Conference on Advancements in Functional Materials
+            <img src="/assets/apa.png" class="logo right-logo" alt="APA">
+        </h1>
         <h2 class="conference-year">2024</h2>
-        <h2> Feb 2024</h2>
-        <h2 class="organizer">Organized by: Veer Bahadur Singh Purvanchal University, Jaunpur</h2>
-        <h2 class="organizer">In Association with: Your Association Name</h2>
+        <h2> February 8-10, 2024</h2>
+        <h2 style="color: navy"> Organized by:</h2>
+        <h2 class="organizer1">Prof. Rajendra Singh (Rajju Bhaiya) Institute of Physical Sciences for Study and Research</h2> 
+        <h2 class="organizer1">Veer Bahadur Singh Purvanchal University, Jaunpur</h2><br>
+        <h2 style="color: navy"> In Association with: </h2>
+        <h2 class="organizer3">Asian Polymer Association, New Delhi, India</h2>
     </div>
+    
     <!-- Background Container with Conference Details -->
     <script>
         // Fetch and insert the navigation bar
