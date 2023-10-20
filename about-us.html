@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ICAFM 2024</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <style>
+        /* Add CSS for the background container here */
+        iframe {
+            z-index: -1;
+        }
+        .about-conference {
+            display:block;
+            background-color: blue;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <iframe src="background.html" frameborder="0" scrolling="no" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <h2 class="about-conference">About Conference</h2>
+    <div class="container" style="margin-left: 25px; text-align: justify; ">
+        <p> In recent years, there has been an enormous interest towards the search of new advanced materials for enhancing the performance of various advanced technologies. 
+            Interdisciplinary research is a key for future innovations in the era of modern times. In order to meet the rapidly changing technological advancements, this 
+            “International Conference on Advancement in Functional Materials” (ICAFM-2024) has been taken as an initiative to serve as a forum on recent developments in the 
+            ﬁeld of functional materials and related devices to promote interdisciplinary research in various areas across the world.
+            The main objective of this conference is to provide an opportunity to scientists/researchers/academicians/ industrialists from various ﬁelds to exchange their ideas, 
+            scientiﬁc thoughts and experimental results across various disciplines to explore the future global challenges in the emerging area of advanced functional materials. This conference will focus on many interesting and knowledge empowering scientiﬁc lectures of interdisciplinary nature, which will cover the frontier areas on materials based research, including materials physics and chemistry, soft materials, polymers and coating, nanoscience and engineering, bio engineering and health care.
+        </p>
+
+    </div>
+    <h2 class="about-conference">About the University</h2>
+    <div class="container" style="margin-left: 25px; text-align: justify; ">
+        <p> The globalization has brought the entire world under one roof and with the technological advancements across the globe, enhancement of the education system has become the focal point. Veer Bahadur Singh Purvanchal University, Jaunpur (U.P.) situated on the banks of river Gomati and Taposthali of Maharshi Yamdagni is striding in the same direction. The University has stood the test of time and developed rapidly to provide students with all facilities to cope with the changing world.
+            The University is committed to be a leading global university and is recognized as an excellent center of learning for quality higher education, The university is committed to create, disseminate and translate knowledge through inclusive education by imbibing traditional and modern knowledge; inculcating values, morals and ethics aligned with our motto “Tejasvinavadhitamstu". The university oﬀers under graduate, post graduate and research programs in Engineering & Technology, Medicine, Management, Law, Applied Social Science, Physical Sciences, Life Sciences as new learning avenues. The Mission of the university is to continue striving for excellence and provide all possible advanced facilities in the respective ﬁelds, that will help nurture the right growth of students thereby promising bright future of the country.            
+        </p>
+
+    </div>
+    <h2 class="about-conference">About the Institute</h2>
+    <div class="container" style="margin-left: 25px; text-align: justify; ">
+        <p>Prof. Rajendra Singh (Rajju Bhaiya) Institute of Physical Sciences for Study and Research within the campus of Veer Bahadur Singh Purvanchal University, Jaunpur is an Institution of national reputation and established by the eﬀorts of the Government of Uttar Pradesh, in the year 2018. The Institute is a tribute to visionary Prof. Rajendra Singh popularly known as 'Rajju Bhaiya', who was a Distinguished Professor and Head of the Physics Department, University of Allahabad, Prayagraj. Rajju Bhaiya was not only an educationist but also a thinker, a social reformer and a skilled organizer.
+            The establishment of the Institute accomplishes the mission of the University to oﬀer best environment for education, students and society for universal developments in all respects. The Institute has four departments of Physical Sciences viz: Physics, Chemistry, Mathematics and Earth & Planetary Sciences which oﬀers the undergraduate, postgraduate and doctoral programme. Institute has two research centers i.e., Nanoscience and Technology Research Centre and Renewable Energy Research Centre which oﬀer M. Tech. (Materials Science & Technology) programme. The departments and research centres have well-equipped laboratories with instruments like SEM-EDS, XRD, FTIR, UV Vis, APS-100, TPS-500S with other infrastructural facilities for undertaking advanced level research.
+        </p>
+    </div>
+    <h2 class="about-conference">About the Asian Polymer Association</h2>
+        <div class="container" style="margin-left: 25px; text-align: justify; ">
+            <p> Asian Polymer Association (APA) was founded in 2007 at the premises of Indian Institute of Technology, New Delhi, India. The society involves academicians, scientists and technologists from all over the Asian countries providing a well knitted structure of the society. Vision of the society is to bring together Asian Science and Technology to the forefront of global arena so that a very dynamic association with the scientiﬁc world from Europe and America may be accomplished. The society platform will help out in bringing together the polymer community to a highly interactive association with each other. The society has grown as a dynamic platform at the international level with enormous collaboration with societies abroad.
+            </p>    
+        </div>
+
+
+
+    <script>
+        // Fetch and insert the navigation bar
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+    </script>
+</body>
