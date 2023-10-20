@@ -67,7 +67,20 @@
             float: right;
             margin-left: 10px; /* Adjust the margin as needed to control the spacing */
         }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
+        .footer-left {
+            text-align: left;
+        }
+
+        .footer-center {
+            text-align: center;
+            flex-grow: 0;
+        }
 
         /* Style your navigation bar */
         /* Add your other CSS styles here */
@@ -92,7 +105,12 @@
         <h3 style="color: navy"> In Association with: </h3>
         <h2 class="organizer3">Asian Polymer Association, New Delhi, India</h2>
     </div>
-    
+    <footer style="display: block; background-color: gray; color: white;">
+        <footer>
+            <p class="footer-left">&copy; ICAFM 2024. All rights reserved.</p>
+            <p class="footer-center">Designed and Developed by Dr. Ramanshu P. Singh</p>
+        </footer>
+    </footer>
     <!-- Background Container with Conference Details -->
     <script>
         // Fetch and insert the navigation bar
