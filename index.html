@@ -81,6 +81,29 @@
             text-align: center;
             flex-grow: 0;
         }
+        .heading {
+            display:block;
+            background-color: blue;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding:1%;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: none;
+            color:rgb(29, 45, 51)
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
 
         /* Style your navigation bar */
         /* Add your other CSS styles here */
@@ -90,20 +113,151 @@
     <!-- Top Cover with Conference Name and Logos -->
     <div id="navbar-placeholder"></div>
     <iframe src="background.html" frameborder="0" scrolling="no" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    <div class="header">
-        <h2> International Conference on</h2>
-        <img src="/assets/vbspu-logo.png" class="logo left-logo" alt="VBSPU">
-            <h1 class="conference-name">
-                Advancement in Functional Materials
-                <img src="/assets/apa.png" class="logo right-logo" alt="APA">
-            </h1>
-        <h1 class="conference-name-short"> ICAFM 2024</h1>
-        <h2> February 8-10, 2024</h2>
-        <h3 style="color: navy"> Organized by:</h3>
-        <h2 class="organizer1">Prof. Rajendra Singh (Rajju Bhaiya) Institute of Physical Sciences for Study and Research</h2> 
-        <h2 class="organizer2">Veer Bahadur Singh Purvanchal University, Jaunpur</h2><br>
-        <h3 style="color: navy"> In Association with: </h3>
-        <h2 class="organizer3">Asian Polymer Association, New Delhi, India</h2>
+    <div class=container>
+        <div class="header">
+            <h2> International Conference on</h2>
+            <img src="/assets/vbspu-logo.png" class="logo left-logo" alt="VBSPU">
+                <h1 class="conference-name">
+                    Advancement in Functional Materials
+                    <img src="/assets/apa.png" class="logo right-logo" alt="APA">
+                </h1>
+            <h1 class="conference-name-short"> ICAFM 2024</h1>
+            <h2> February 8-10, 2024</h2>
+            <h3 style="color: navy"> Organized by:</h3>
+            <h2 class="organizer1">Prof. Rajendra Singh (Rajju Bhaiya) Institute of Physical Sciences for Study and Research</h2> 
+            <h2 class="organizer2">Veer Bahadur Singh Purvanchal University, Jaunpur</h2><br>
+            <h3 style="color: navy"> In Association with: </h3>
+            <h2 class="organizer3">Asian Polymer Association, New Delhi, India</h2>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="heading">Topics
+        </h2>
+        <table>
+            <tr>
+              <td>Polymers, biopolymers, composites, hybrids, gels</td>
+              <td>Nanomaterials for flexible electronics</td>
+            </tr>
+            <tr>
+                <td>Modifications of Polymer</td>
+                <td>Waste Management and Sustainability</td>
+            </tr>
+            <tr>
+              <td>Functional materials for energy harvesting</td>
+              <td>Nanomaterials & Nanoengineering</td>
+            </tr>
+            <tr>
+                <td>Materials for electrode & electrolyte</td>
+                <td>Computational Chemistry for material science</td>
+            </tr>
+            <tr>
+                <td>Carbon materials and Applications</td>
+                <td>Pharmaceutical Chemistry & Nanomedicine</td>
+            </tr>
+            <tr>
+                <td>Catalytic and sensing materials</td>
+                <td>Non-destructive Characterization of functional materials</td>
+            </tr>
+            <tr>
+              <td>Semiconductor, multiferroic and dielectrics</td>
+              <td>Ultrasonic characterization of functional materials</td>
+            </tr>
+            <tr>
+              <td>Ion beam modification of materials</td>
+              <td>Other relevant topics related to the conference theme</td>
+            </tr>
+          </table>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="heading">Registration Fee</h2>
+                <table>
+                    <tr>
+                      <th></th>
+                      <th>Catagory</th>
+                      <th>Early Bird</th>
+                      <th>After Due Date</th>
+                      <th>On Spot</th>
+                      <th>Foreign Deligates</th>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td>Students</td>
+                      <td>&#8377; 1,000</td>
+                      <td>&#8377; 1,500</td>
+                      <td>&#8377; 2,000</td>
+                      <td>&#36; 200</td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td>Faculty</td>
+                      <td>&#8377; 2,000</td>
+                      <td>&#8377; 2,500</td>
+                      <td>&#8377; 3,000</td>
+                      <td>&#36; 300</td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td>Industry Person</td>
+                      <td>&#8377; 4,000</td>
+                      <td>&#8377; 5,000</td>
+                      <td>&#8377; 6,000</td>
+                      <td>&#36; 600</td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td>Accompanying</td>
+                      <td>&#8377; 1,000</td>
+                      <td>&#8377; 1,500</td>
+                      <td>&#8377; 2,000</td>
+                      <td>&#36; 200</td>
+                    </tr>
+                  </table>
+                  
+            </div>
+            <div class="col-md-6">
+                <h2 class="heading">Important Dates</h2>
+                <table>
+                    <tr>
+                        <td style="font-weight: bold">Last date for abstract submission</td>
+                        <td style="font-weight: bold; color: darkblue;"> 15.12.2023</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold">Notification of acceptance of abstract</td>
+                        <td style="font-weight: bold; color: darkblue;"> 25.12.2023</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold">Registration fee due date</td>
+                        <td style="font-weight: bold; color: darkblue;"> 15.01.2024</td>
+                    </tr>
+                </table>
+                <h2 class="heading">Bank details for Fee Submission</h2>
+                <table>
+                    <tr>
+                        <td style="font-weight: bold; color: darkblue">Name:</td>
+                        <td style="font-weight: bold;">Director Rajju Bhaiya Institute VBSPU Jaunpur</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; color:darkblue">Account Number:</td>
+                        <td style="font-weight: bold;">4539002100005560</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; color:darkblue">Bank Name:</td>
+                        <td style="font-weight: bold;">Punjab National Bank</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; color:darkblue">Branch Name:</td>
+                        <td style="font-weight: bold;">Purvanchal University, Jaunpur</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; color:darkblue">IFSC:</td>
+                        <td style="font-weight: bold;">PUNB0453900</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
     </div>
     <footer style="display: block; background-color: gray; color: white;">
         <footer>
