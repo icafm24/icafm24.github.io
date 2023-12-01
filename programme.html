@@ -32,11 +32,23 @@
             height: auto;
             border-radius: 50%;
         }
+        iframe {
+            z-index: -1;
+        }
+        .about-conference {
+            display:block;
+            background-color: blue;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding-left: 20px;
+        }
   </style>
 </head>
 <body>
     <div id="navbar-placeholder"></div>
     <iframe src="background.html" frameborder="0" scrolling="no" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <h2 class="about-conference"> List of Speakers</h2>
     <div id="speakers-list"></div>
 
 <script>
