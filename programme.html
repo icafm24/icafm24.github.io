@@ -9,11 +9,81 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #speakers-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .speaker-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+  </style>
 </head>
 <body>
     <div id="navbar-placeholder"></div>
     <iframe src="background.html" frameborder="0" scrolling="no" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-    <h1>To be anounced.</h1>
+    <div id="speakers-list"></div>
+
+<script>
+    // Sample data for speakers
+    const speakers = [
+        {
+            name: "Prof. Dr. Susanta Banergee",
+            photo: "/assets/Prof_Susanta_Banergee.png",
+            affiliation: "Materials Science Centre, IIT Kharagpur"
+        },
+        {
+            name: "Prof. Mrituanjay D. Pandey",
+            photo: "/assets/Prof_Mrituanjay_Pandey.jpg",
+            affiliation: "Department of Chemistry, BHU, Varanasi"
+        },
+        // Add more speakers as needed
+    ];
+
+    // Function to display speakers on the webpage
+    function displaySpeakers() {
+        const speakersList = document.getElementById("speakers-list");
+
+        speakers.forEach(speaker => {
+            const card = document.createElement("div");
+            card.classList.add("speaker-card");
+
+            const img = document.createElement("img");
+            img.src = speaker.photo;
+            img.alt = speaker.name;
+
+            const name = document.createElement("h2");
+            name.textContent = speaker.name;
+
+            const affiliation = document.createElement("p");
+            affiliation.textContent = speaker.affiliation;
+
+            card.appendChild(img);
+            card.appendChild(name);
+            card.appendChild(affiliation);
+
+            speakersList.appendChild(card);
+        });
+    }
+
+    // Call the function to display speakers when the page loads
+    window.onload = displaySpeakers;
+</script>
 
 
     <script>
