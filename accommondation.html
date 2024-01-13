@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICAFM 2024 - Local</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <style>
+        /* Add CSS for the background container here */
+        iframe {
+            z-index: -1;
+        }
+        .about-conference {
+            display:block;
+            background-color: blue;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <iframe src="background.html" frameborder="0" scrolling="no" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <h2 class="about-conference">Travel and Accommondation</h2>
+    <div class="container" style="margin-left: 25px; text-align: justify; ">
+        <p> Dear Participant of ICAFM 2024, </p>
+        <p>On behalf of the organizing committee, I take this privilege to WELCOME
+            YOU at the Veer Bahadur Singh Purvanchal University, Jaunpur, Uttar
+            Pradesh during 8-10th February, 2024.
+            We are delighted to inform you that the Technical Committee of
+            ICAFM_2024 has already sent the confirmation email regarding accepted
+            papers for ORAL/POSTER to the presentations registered email address
+            provided (in case if you didn't received acceptance mail, please inform us
+            immediately to the email <a href="mailto:icafm24@gmail.com">icafm24@gmail.com</a>).
+            To take advantage of the early bird registration benefits, we kindly
+            advise you to complete your registration by January 15th, 2024 (those
+            participants who has not paid their registration fee till date). After this
+            standard registration fee will be applicable. For fee and account details see
+            the aattach brouche on conference website.
+            Kindly forward yours travel itinerary for smooth transfer from
+            AIRPORT/RAILWAY STATION on yours ARRIVAL at Jaunpur and book your
+            Tickets in advance and send us your travel plan as soon as possible in the
+            given <a href="https://forms.gle/5rTegqFZE86tmyPQA">google form link.</a>
+            Accommodation will be providing on request and first-come, firstserved
+            basis on nominal charges. To facilitate hassle free stay at economical
+            rates, following choices have been provided at a discounted rate. The
+            options are:</p>
+            <p>University Hostels: @ Rs. 200 per night
+            Hotel Type-I: @ Rs. 700 per night
+            Hotel Type-II: @ Rs. 1200 per night
+            Hotel type-III: @ Rs. 2000 per night
+            Visit the conference website for the Travel details/how to reach
+            conference venue.
+        </p>
+        <p>Looking forward to see you soon here at Jaunpur.</p>
+
+    </div>
+    <h2 class="about-conference">About Jaunpur</h2>
+    <div class="container" style="margin-left: 25px; text-align: justify; ">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Jaunpur, a part of the Varanasi division of Uttar Pradesh, is known for its rich culture and historical significance. Well-known for its past and the glory of learning Jaunpur holds its own important historical, social and political status.
+                        The glory of the city on the Adi Ganga Gomti and its peaceful shores was a major pious ground for the meditations and contemplations of sages, Rishis and Maharshis from where the sounds of the vedmantras emanated. 
+                        In 14th century by Feroze Shah Tughlaq  named it Jaunpur in memory of his cousin Muhammad Bin Tughlaq, fondly known as Jauna Khan. Over the years, it was conquered and ruled by many regimes including the Sharqi dynasty and the Mughals.
+                </p>
+                <p>Jaunpur is situated at the center of many historical and religious places of Bharat. The famous Shakti Peeth, Goddess Shitla Maa (Chaukiya Dham) is just 8km from  the campus. Ayodhya, the birth place of Shri Ram is 130 km from 
+                        the university campus while the ancient city,  Kashi (Varanasi) is 80 km away. The Sangam city, Prayagraj is 110 km from the university campus. Goddess Vindhyavasini temple (Vindhyachal Dham) is situated in district Mirzapur is located 90Km away. 
+                        All these places are well connected by road, rail and air.
+                </p>
+            </div>
+            <div class="col-md-4" style="align-self: right;">
+                <a href="https://maps.app.goo.gl/fhDdUDE1AAUXwjnf8" target="_blank"><img src="/assets/Jaunpur_map.png" style="align-items: right; height: 225px;" > </a>
+            </div>
+        </div>
+        </div>
+
+
+
+    <script>
+        // Fetch and insert the navigation bar
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+    </script>
+</body>
