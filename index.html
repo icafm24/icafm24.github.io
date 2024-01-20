@@ -89,6 +89,7 @@
             color: white;
             padding:1%;
             padding-left: 20px;
+            text-align: center;
         }
         table {
             width: 100%;
@@ -114,6 +115,23 @@
             font-style: bold;
             color: rgb(150, 20, 0);
             font-size: large;
+        }
+        .sponsor-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            opacity: 0.9;
+        }
+
+        .sponsor-logo {
+            max-width: 100px;
+            height: auto;
+            margin: 10px;
         }
 
         /* Style your navigation bar */
@@ -314,6 +332,13 @@
             </div>
         </div>
     </div>
+    <h2 class="heading" sytle="text-align: center">Our Sponsors</h2>
+    <div class="sponsor-container">
+      <img src="assets/serb_logo.png" alt="SERB" class="sponsor-logo">
+      <img src="assets/DBT-logo.png" alt="DBT" class="sponsor-logo">
+      <img src="assets/DRDO_logo.png" alt="DRDO" class="sponsor-logo">
+      <!-- Add more sponsor logos as needed -->
+  </div>
     <footer style="display: block; background-color: gray; color: white;">
         <footer>
             <p class="footer-left" style="padding-left: 5px;">&copy; ICAFM 2024. All rights reserved.</p>
